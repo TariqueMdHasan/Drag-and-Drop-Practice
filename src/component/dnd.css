@@ -1,0 +1,33 @@
+.container{
+    width: auto;
+    height: 80vh;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.columns{
+    background-color: aquamarine;
+    border: .5px solid rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: grab;
+    position: relative;
+    /* padding: 1rem; */
+    transition: width 0.2s ease; /* smooth resize */
+    padding-left: 10px; /* optional */
+}
+
+.columnResize{
+    position: absolute;
+    background-color:  rgba(0,0,0,0.2);
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    cursor: col-resize;
+
+}
